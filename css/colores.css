@@ -1,0 +1,92 @@
+.box {
+    color: white;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    font-size: 1.8em;
+    margin: 50px;
+    
+
+}
+.box-main-1{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: darkcyan;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-2{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: goldenrod;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-3{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: dodgerblue;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-4{
+    justify-content: center;
+    align-items: center;
+    margin:50px ;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(225,0,0)
+}
+.box-main-5{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(7, 150, 194);
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-6{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(9, 64, 243);
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-7{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color:#F85D43;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-8{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color:#cdfd1e;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box-main-9{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color:#d40ee6;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+    

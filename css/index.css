@@ -1,0 +1,491 @@
+body{
+    background-color: rgb(0, 162, 255);
+       
+   
+   }
+   .menu1{
+    background-color: black;
+   display: inline-flex;
+    font-size: 1.3em;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    margin-right: 30px;
+    line-height: 45px;
+    margin-top: 10px;
+   }
+   
+   
+   .menu1 a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    
+   }
+   .menu1 a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+   }
+   .menu2{
+    background-color: black;
+    display: inline-flex;
+    font-size: 1.3em;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    margin-right: 30px;
+    line-height: 45px;
+    margin-top: 10px;
+   }
+   .menu2 a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+   
+   }
+   .menu2 a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+   }
+   .menu3{
+    background-color: black;
+    display: inline-flex;
+    font-size: 1.3em;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    margin-right: 30px;
+    line-height: 45px;
+    margin-top: 10px;
+      
+   }
+   .menu3 a{
+   text-decoration: none;
+   color: white;
+   padding: 0 20px;
+   }
+    .menu3 a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+   }
+   .menu4{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu4 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu4 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu5{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+   }
+      .menu5 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+   }
+       .menu5 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+   }
+   .menu6{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu6 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu6 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu7{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu7 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu7 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu8{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu8 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu8 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu9{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu9 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu9 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu10{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu10 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu10 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu11{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu11 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu11 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu12{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu12 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu12 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu13{
+       background-color: black;
+       display: inline-flex;
+       font-size: 1.3em;
+       font-weight: 900;
+       border: none;
+       border-radius: 20px;
+       margin-right: 30px;
+       line-height: 45px;
+       margin-top: 10px;
+         
+      }
+      .menu13 a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      }
+       .menu13 a:hover{
+       background-color: white;
+       color: black;
+       border: none;
+       border-radius: 20px;
+      }
+      .menu14{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu14 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu14 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu15{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu15 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu15 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu16{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu16 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu16 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu17{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu17 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu17 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu18{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu18 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu18 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu19{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu19 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu19 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+
+       .menu20{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu20 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu20 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
+       .menu21{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu21 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu21 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }

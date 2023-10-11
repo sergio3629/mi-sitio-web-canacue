@@ -1,0 +1,22 @@
+.nombre-producto {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(48,48,48.9);
+    
+
+}
+.product-box {
+    width: 400px;
+    display: inline-block;
+}
+.precio-producto {
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+
+
+
+}
+
