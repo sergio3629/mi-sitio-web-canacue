@@ -489,3 +489,26 @@ body{
         border: none;
         border-radius: 20px;
        }
+       .menu22{
+        background-color: black;
+        display: inline-flex;
+        font-size: 1.3em;
+        font-weight: 900;
+        border: none;
+        border-radius: 20px;
+        margin-right: 30px;
+        line-height: 45px;
+        margin-top: 10px;
+          
+       }
+       .menu22 a{
+       text-decoration: none;
+       color: white;
+       padding: 0 20px;
+       }
+        .menu22 a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px;
+       }
