@@ -133,7 +133,30 @@ header {
 .header-carrito {
     grid-area: header-carrito;
 }
-
+.main-menu {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+li {
+    list-style: none;
+  }
+.hori {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+  
+.hori:hover {
+    cursor: pointer;
+    color: rgb(158, 158, 158);
+    border: 1 solid white;
+}
+  
 /* Fonts */
 /* poppins-200 - latin */
 @font-face {
@@ -273,19 +296,19 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: rgb(0, 0, 0,.5);
-z-index: 10;
+z-index: 20;
 }
 
 .modal {
-   width: 90%;
-   height: 77%;
-   z-index: 20; 
+   width: 94%;
+   height: 87%;
+   z-index: 30; 
    background-color: white;
-   border-radius: 15px;
+   border-radius: 13px;
    position: relative;
    display: grid;
    grid-template: "box-main-img-modal info-modal"  /
-                1fr                350px;
+                1fr                370px;
 }
 .box-main-img-modal {
     grid-area: box-main-img-modal;
@@ -296,7 +319,7 @@ z-index: 10;
     align-items: center;
 }   
 .main-img-modal {
-    width: 27%;
+    width: 80%;
     height: auto;
 }
 .info-modal {
@@ -315,23 +338,11 @@ padding: 0 3px;
 }
 
 .txt-caracteristicas-modal {
-    color: rgb(96,96,96);
-    font-size: 1.1em;
-
-
+    color: rgb(9, 8, 8);
    
+    font-size: 18px;
+    font-family: verdana, Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
 .header-search-input-focus {
     height: 46px;
     width: 100%;
@@ -353,3 +364,90 @@ padding: 0 3px;
      }
 
 
+.article {
+    height: 60px;
+    width: 60px;
+    grid-area: article-1;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px double rgb(214, 211, 211);
+}
+.container-img {
+
+/*     margin-bottom: -10px; */
+    display: grid;
+    grid-template: "empty-0       empty-0        empty-0         empty-0        empty-0"  40px
+                   "article-1     empty-1        article-2       empty-2        article-3" 90px
+                   "article-4     empty-1        article-5       empty-2        article-6" 90px   /
+                   90px            10px             90px           10px             90px
+}
+.article-1 {
+    grid-area: article-1;
+    
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+}
+.article-4 {
+    grid-area: article-4;
+}
+.article-5 {
+    grid-area: article-5;
+}
+
+
+.main-img-modal {
+    width: 27%; /* Tamaño inicial de la imagen principal */
+    height: auto; /* Para mantener la relación de aspecto */
+
+}
+
+.img-mini {
+    width: 50%; /* Las miniaturas tienen un tamaño fijo del 100% del contenedor */
+}
+
+/* Estilo para la imagen principal cuando se selecciona una miniatura */
+.main-img-modal.enlarge {
+    width: 27%; 
+}
+.main-barco {
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal"  /
+                    150px                       1fr                             350px;
+ }
+.principal-container-img {
+    grid-area: principal-container-img;
+}
+.principal-box-main-img-modal {
+    grid-area: principal-box-main-img-modal;
+    width: 100%;
+    height: 120%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.principal-info-modal {
+    grid-area: principal-info-modal;
+    padding: 30px 60px 30px 30px;
+}
+.principal-main-img-modal {
+    width: 29%;
+    height: auto;
+}
+.principal-article {
+    /* border-radius: 10px; */
+    height: 60px;
+    width: 60px;
+    margin: 30px; 
+}
