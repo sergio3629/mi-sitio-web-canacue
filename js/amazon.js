@@ -30,78 +30,83 @@ let boxMainImgModal4 = document.getElementById("boxMainImgModal4");
 let boxMainImgModal5 = document.getElementById("boxMainImgModal5");
 
 
-
-
 mainImgModal1.addEventListener("click", () => {
+
+boxMainImgModal1.classList.add("selected");
+
+boxMainImgModal2.classList.remove("selected");
+
+boxMainImgModal3.classList.remove("selected");
+
+boxMainImgModal4.classList.remove("selected");
+
+boxMainImgModal5.classList.remove("selected");
+
     mainImgModal.setAttribute("src", "img/depredador1.jpg");
-    boxMainImgModal1.classList.add("box-img-depredador");
-    boxMainImgModal2.classList.remove("box-img-depredador");
-    boxMainImgModal3.classList.remove("box-img-depredador");
-    boxMainImgModal4.classList.remove("box-img-depredador");
-    boxMainImgModal5.classList.remove("box-img-depredador");
-    mainImgModal1.classList.add("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
-  });
+
+});
+
 mainImgModal2.addEventListener("click", () => {
-    mainImgModal.setAttribute("src", "img/depredador2.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.add("box-img-barcos");
-    boxMainImgModal3.classList.remove("box-img-barcos");
-    boxMainImgModal4.classList.remove("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.add("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
+
+boxMainImgModal1.classList.remove("selected");
+
+boxMainImgModal2.classList.add("selected");
+
+boxMainImgModal3.classList.remove("selected");
+
+boxMainImgModal4.classList.remove("selected");
+
+boxMainImgModal5.classList.remove("selected");
+
+mainImgModal.setAttribute("src", "img/depredador2.jpg");
+
   });
 mainImgModal3.addEventListener("click", () => {
+  
+boxMainImgModal1.classList.remove("selected");
+
+boxMainImgModal2.classList.remove("selected");
+
+boxMainImgModal3.classList.add("selected");
+
+boxMainImgModal4.classList.remove("selected");
+
+boxMainImgModal5.classList.remove("selected");
+
     mainImgModal.setAttribute("src", "img/depredador3.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.remove("box-img-barcos");
-    boxMainImgModal3.classList.add("box-img-barcos");
-    boxMainImgModal4.classList.remove("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.add("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
+  
   });
 mainImgModal4.addEventListener("click", () => {
+  
+  boxMainImgModal1.classList.remove("selected");
+
+  boxMainImgModal2.classList.remove("selected");
+  
+  boxMainImgModal3.classList.remove("selected");
+  
+  boxMainImgModal4.classList.add("selected");
+  
+  boxMainImgModal5.classList.remove("selected");
     mainImgModal.setAttribute("src", "img/depredador4.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.remove("box-img-barcos");
-    boxMainImgModal3.classList.remove("box-img-barcos");
-    boxMainImgModal4.classList.add("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.add("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
+
   });
 mainImgModal5.addEventListener("click", () => {
-    mainImgModal.setAttribute("src", "img/depredador5.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.remove("box-img-barcos");
-    boxMainImgModal3.classList.remove("box-img-barcos");
-    boxMainImgModal4.classList.remove("box-img-barcos");
-    boxMainImgModal5.classList.add("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.add("img-barcos-opa");
+  
+  boxMainImgModal1.classList.remove("selected");
+
+  boxMainImgModal2.classList.remove("selected");
+  
+  boxMainImgModal3.classList.remove("selected");
+  
+  boxMainImgModal4.classList.remove("selected");
+  
+  boxMainImgModal5.classList.add("selected");
+
+   mainImgModal.setAttribute("src", "img/depredador5.jpg");
+
   });
 
-
-
 const miniaturas = document.querySelectorAll('.img-mini');
-
 
 miniaturas.forEach((miniatura) => {
     miniatura.addEventListener('click', () => {
@@ -117,10 +122,39 @@ miniaturas.forEach((miniatura) => {
     });
 });
 
-/* sirve para ocultar una etiqueta HTML utilizando su ID */
+const miniaturas1 = document.querySelectorAll('.img-mini');
+
+miniaturas1.forEach((miniatura) => {
+
+miniatura.addEventListener('mouseover', () => {
+
+
+miniatura.parentElement.classList.add('border-blue');
+});
+
+miniatura.addEventListener('click', () => {
+
+  basic
+  Copy
+ 
+  miniatura.parentElement.classList.remove('border-blue');
+  miniatura.parentElement.classList.add('border-orange');
+  });
+  
+  });
+
 btnClose.addEventListener("click", function() {
   mainContent.style.display = "none";
 });
+
+
+
+
+
+
+
+
+
 
 
 let mainImgModal111 = document.getElementById("mainImgModal111");
@@ -137,69 +171,42 @@ let boxMainImgModal33 = document.getElementById("boxMainImgModal33");
 let boxMainImgModal44 = document.getElementById("boxMainImgModal44");
 let boxMainImgModal55 = document.getElementById("boxMainImgModal55");
 
-  mainImgModal11.addEventListener("click", () => {
-    mainImgModal111.setAttribute("src", "img/depredador1.jpg");
-    boxMainImgModal11.classList.add("box-img-barcos");
-    boxMainImgModal22.classList.remove("box-img-barcos");
-    boxMainImgModal33.classList.remove("box-img-barcos");
-    boxMainImgModal44.classList.remove("box-img-barcos");
-    boxMainImgModal55.classList.remove("box-img-barcos");
-    mainImgModal11.classList.add("img-barcos-opa");
-    mainImgModal22.classList.remove("img-barcos-opa");
-    mainImgModal334.classList.remove("img-barcos-opa");
-    mainImgModal44.classList.remove("img-barcos-opa");
-    mainImgModal55.classList.remove("img-barcos-opa");
-  });
+mainImgModal11.addEventListener("click", () => {
+  
+mainImgModal111.setAttribute("src", "img/depredador1.jpg");
+  
+});
+
 mainImgModal22.addEventListener("click", () => {
-    mainImgModal111.setAttribute("src", "img/depredador2.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.add("box-img-barcos");
-    boxMainImgModal3.classList.remove("box-img-barcos");
-    boxMainImgModal4.classList.remove("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.add("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
-  });
+
+mainImgModal111.setAttribute("src", "img/depredador2.jpg");
+   
+});
 mainImgModal33.addEventListener("click", () => {
-    mainImgModal111.setAttribute("src", "img/depredador3.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.remove("box-img-barcos");
-    boxMainImgModal3.classList.add("box-img-barcos");
-    boxMainImgModal4.classList.remove("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.add("img-barcos-opa");
-    mainImgModal4.classList.remove("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
-  });
+
+mainImgModal111.setAttribute("src", "img/depredador3.jpg");
+  
+});
+
 mainImgModal44.addEventListener("click", () => {
-    mainImgModal111.setAttribute("src", "img/depredador4.jpg");
-    boxMainImgModal1.classList.remove("box-img-barcos");
-    boxMainImgModal2.classList.remove("box-img-barcos");
-    boxMainImgModal3.classList.remove("box-img-barcos");
-    boxMainImgModal4.classList.add("box-img-barcos");
-    boxMainImgModal5.classList.remove("box-img-barcos");
-    mainImgModal1.classList.remmove("img-barcos-opa");
-    mainImgModal2.classList.remove("img-barcos-opa");
-    mainImgModal3.classList.remove("img-barcos-opa");
-    mainImgModal4.classList.add("img-barcos-opa");
-    mainImgModal5.classList.remove("img-barcos-opa");
-  });
+    
+mainImgModal111.setAttribute("src", "img/depredador4.jpg");
+
+});
+
 mainImgModal55.addEventListener("click", () => {
-    mainImgModal111.setAttribute("src", "img/depredador5.jpg");
-    boxMainImgModal11.classList.remove("box-img-barcos");
-    boxMainImgModal22.classList.remove("box-img-barcos");
-    boxMainImgModal33.classList.remove("box-img-barcos");
-    boxMainImgModal44.classList.remove("box-img-barcos");
-    boxMainImgModal55.classList.add("box-img-barcos");
-    mainImgModal11.classList.remmove("img-barcos-opa");
-    mainImgModal22.classList.remove("img-barcos-opa");
-    mainImgModal33.classList.remove("img-barcos-opa");
-    mainImgModal44.classList.remove("img-barcos-opa");
-    mainImgModal55.classList.add("img-barcos-opa");
+    
+mainImgModal111.setAttribute("src", "img/depredador5.jpg");
+
+});
+
+  mainImgModal111.addEventListener("click", function() {
+
+    if (mainContent.style.display === "none") {
+    mainContent.style.display = "block";
+    }
+  
   });
 
+
+  
