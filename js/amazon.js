@@ -148,15 +148,7 @@ btnClose.addEventListener("click", function() {
 });
 
 
-
-
-
-
-
-
-
-
-
+//principal
 let mainImgModal111 = document.getElementById("mainImgModal111");
 
 let mainImgModal11 = document.getElementById("mainImgModal11");
@@ -208,5 +200,51 @@ mainImgModal111.setAttribute("src", "img/depredador5.jpg");
   
   });
 
+  const containerImg = document.querySelector('.principal-container-img');
+  const imagenPrincipal = document.getElementById('mainImgModal111');
+  const miniatura1 = document.querySelectorAll('.principal-article');
+  
+  containerImg.addEventListener('mouseover', (event) => {
+    if (event.target && event.target.classList.contains('principal-article')) {
+      const src = event.target.querySelector('.img-mini-principal').getAttribute('src');
+      imagenPrincipal.setAttribute('src', src);
 
   
+      miniaturas.forEach((miniatura) => {
+        miniatura.style.border = '2px double rgb(214, 211, 211)'; // Restablecer el borde de todas las miniaturas
+      });
+  
+      event.target.style.border = '2px solid lightblue'; // Cambiar el borde de la miniatura al pasar el cursor
+    }
+  });
+  
+  containerImg.style.cursor = 'pointer';
+  
+  miniatura1.forEach((miniatura) => {
+    miniatura.addEventListener('mouseover', () => {
+      miniatura.style.border = '2px solid lightblue'; // Cambiar el borde al pasar el cursor por la miniatura
+    });
+  
+    miniatura.addEventListener('mouseout', () => {
+      miniatura.style.border = '1px solid rgb(77, 77, 79)'; // Restablecer el borde al salir del cursor
+    });
+  });
+  
+  img_principal.onmousemove = function (e) {
+    e.target.style.setProperty("--x", (10 * e.offsetX / e.target.offsetWidth) + "%")
+    e.target.style.setProperty("--y", (10 * e.offsetY / e.target.offsetHeight) + "%")
+}
+
+window.onload = () => {
+  let modalt = document.getElementById('modalt');
+  let mainImgModal111 = document.getElementById('mainImgModal111');
+
+  // Al cargar la página, quitamos ciertos estilos del contenedor 1
+  modalt.classList.add('quitar-estilo');
+  
+  // Agregamos un evento de clic al contenedor 2
+  mainImgModal111.addEventListener('click', () => {
+      // Al hacer clic en el contenedor 2, volvemos a agregar los estilos al contenedor 1
+      modalt.classList.remove('quitar-estilo');
+  });
+}
