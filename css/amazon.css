@@ -366,9 +366,10 @@ z-index: 20;
     border-bottom: 2px solid rgb(255, 143, 0);
 }
 .txt-caracteristicas-modal {
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-align: justify;
-    line-height: 1em;
+    line-height: 1.3em;
+  
 }
 .txt-estilos-caracteristicas {
     color: rgb(96, 96, 96);
@@ -429,7 +430,7 @@ z-index: 20;
     position: relative;
     display: grid;
     grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal    principal-compra-modal"  /
-                    50px                        1fr                             500px                   320px;
+                    50px                        1fr                             550px                   320px;
  }
 .principal-container-img {
     grid-area: principal-container-img;
@@ -477,6 +478,7 @@ z-index: 20;
     font-weight: 500;
     display: flex;
     align-items: flex-start;
+    margin-top: -20px;
 }
 .txt-precio {
     font-size: 1.5em;
@@ -498,8 +500,8 @@ z-index: 20;
     font-weight: 500;
 }
 .envio-gratis {
-    font-weight: 700;
-    color: rgb(136, 136, 136);
+    font-weight: 530;
+    color: rgb(86, 86, 86);
 }
 .txt-entrega {
     color: rgb(127, 127, 127);
@@ -573,9 +575,9 @@ z-index: 20;
     align-items: center;
 }
 .principal-article:hover {  /*  */
-    border: solid 2px #244096;
+    border: solid 2px rgb(76, 143, 165);
     cursor: pointer; 
-    box-shadow: 10px 10px 60px rgb(76, 143, 165);   
+/*     box-shadow: 10px 10px 10px rgb(76, 143, 165);    */
 }
 .principal-article.box-img-barcos{
     cursor: pointer;
@@ -596,14 +598,18 @@ z-index: 20;
     padding-bottom: 10px;
   }
   .marca{
+    cursor: pointer;
     text-decoration: none;
     color: #007185;
-    font-size: 15px;
+    font-size: 14px;
     display: block;
+   margin-bottom: -10px;
+ /*    margin-top: -20px; */
   }
   .marca:hover{
-    text-decoration: underline;
+    text-decoration: none; 
     color: #C7511F;
+    cursor: pointer;
   }
   .desc{
     font-size: 25px;
@@ -622,6 +628,7 @@ z-index: 20;
   .valoracion, .preguntas{
     text-decoration: none;
     color: #007185;
+    font-size: 14px;
   }
   .preguntas:hover{
     text-decoration: underline;
@@ -645,6 +652,8 @@ z-index: 20;
     margin-top: 20px;
   }
   .txt-principal-modal ul {
+    font-size: 14px;
+ 
     list-style-type: disc; /* Agrega bolitas a los elementos de la lista */
     margin-left: 20px; /* Añade un margen a la izquierda para dar espacio a las bolitas */
   }
@@ -712,9 +721,9 @@ z-index: 20;
     transition: color 0.3s; 
 }
 
-.enviar-a-colombia:hover {
+/* .enviar-a-colombia:hover {
     color: #c21d1d; 
-}
+} */
 
 .icono-enviar-colombia {
 
@@ -738,16 +747,106 @@ z-index: 20;
 
 
 .fa-solid.fa-arrow-up-from-bracket {
-margin-top: -730px;
-margin-left: 700px; 
+margin-top: -700px;
+font-size: 20px;
+margin-left: 640px; 
 }
 
-.contenedor {
-    display: inline-block;
-}
+/* .contenedor {
+    display: inline-block; 
+} */
 
 .contenedor:hover .marca,
 .contenedor:hover .fa-chevron-down {
     color: #c21d1d; 
+  
+
+}
+.fa-solid.fa-chevron-down {
+    font-size: 9px;
+    margin-left: 80px;
+   
+}
+
+#ul {
+   margin-top: -25px;
+}
+
+#devoluciones-gratis-icono {
+margin-left: 90px;
+margin-top: -25px;
+}
+
+#devoluciones-gratis-icono-1 {
+    margin-left: 90px;
+    margin-top: -32px;
+
+}
+
+.contenedor-2:hover .marca-2,
+.contenedor-2:hover .fa-chevron-down {
+    color: #c21d1d; 
+   
+  
+
+}
+.marca-2 {
+    text-decoration: none; 
+    color: #1a7277;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contenedor-2 {
+    cursor: pointer;
+}
+
+.marca-3 {
+    text-decoration: none; 
+    color: #1a7277;
+    cursor: pointer;
+}
+
+.contenedor-3:hover .marca-3,
+.contenedor-3:hover .fa-chevron-down {
+    color: #c21d1d; 
+}
+#icono-3 {
+    margin-bottom: 30px;
+}
+
+
+
+.marca-4 {
+    text-decoration: none; 
+    color: #1a7277;
+    cursor: pointer;
+    margin-bottom: 300px;
+}
+
+.contenedor-4:hover .marca-4,
+.contenedor-4:hover .fa-chevron-down {
+    color: #c21d1d; 
+}
+
+.contenedor-3 {
+    cursor: pointer;
+}
+.contenedor-4 {
+    cursor: pointer;
+}
+
+.txt-caracteristicas-modal-entrega {
+    font-size: 14px;
+}
+
+/* .txt-caracteristicas-modal-entrega-2 {
+    font-size: 14px;
+  
+} */
+
+.label {
+font-size: 14px;
+margin-top: 10px;
 
 }

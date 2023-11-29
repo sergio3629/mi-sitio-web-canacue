@@ -206,7 +206,7 @@ let start2 = document.getElementById("start2")
 let start3 = document.getElementById("start3")
 let start4 = document.getElementById("start4")
 let start5 = document.getElementById("start5")
-let puntuacion = document.getElementById("puntuacion").innerText = 4.3
+let puntuacion = document.getElementById("puntuacion").innerText = 4.1
     
     if(puntuacion >= 0 && puntuacion <= 0.2) {
         start1.setAttribute("class", "estrella fa-regular fa-star")
