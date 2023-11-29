@@ -1,20 +1,10 @@
 let headerSearchInput = document.getElementById("headerSearchInput");
-
 let mainContent = document.getElementById("main-content");
+let mainBarco = document.getElementById("main-barco");
+let btnClose = document.getElementById("btnClose");
+let header = document.getElementById("header");
 
-
-headerSearchInput.addEventListener("click", function() {
-
-    headerSearchInput.classList.add("header-search-input-focus");
-    headerSearchInput.classList.remove("header-search-input-no-focus");
-});
-
-mainContent.addEventListener("click", () => {
-
-    headerSearchInput.classList.add("header-search-input-no-focus");
-    headerSearchInput.classList.remove("header-search-input-focus");
-});
-
+/*  */
 let mainImgModal = document.getElementById("mainImgModal");
 
 let mainImgModal1 = document.getElementById("mainImgModal1");
@@ -30,211 +20,172 @@ let boxMainImgModal4 = document.getElementById("boxMainImgModal4");
 let boxMainImgModal5 = document.getElementById("boxMainImgModal5");
 
 
-mainImgModal1.addEventListener("click", () => {
 
-boxMainImgModal1.classList.add("selected");
+/* Para el color de la barra de busqueda */
+headerSearchInput.addEventListener("click", function() {
 
-boxMainImgModal2.classList.remove("selected");
+    headerSearchInput.classList.add("header-search-input-focus");
+    headerSearchInput.classList.remove("header-search-input-no-focus");
+});
+mainContent.addEventListener("click", () => {
 
-boxMainImgModal3.classList.remove("selected");
-
-boxMainImgModal4.classList.remove("selected");
-
-boxMainImgModal5.classList.remove("selected");
-
-    mainImgModal.setAttribute("src", "img/depredador1.jpg");
-
+    headerSearchInput.classList.add("header-search-input-no-focus");
+    headerSearchInput.classList.remove("header-search-input-focus");
 });
 
+/* sirve para ocultar una etiqueta HTML utilizando su ID */
+btnClose.addEventListener("click", function() {
+    mainContent.style.display = "none";
+});
+
+
+
+/* Color menú Imagenes Video */
+let optionVideos = document.getElementById("optionVideos");
+let optionImagenes = document.getElementById("optionImagenes");
+
+optionVideos.addEventListener("click", () => { 
+  optionImagenes.classList.remove("option-selected");
+  optionVideos.classList.add("option-selected");
+});
+optionImagenes.addEventListener("click", () => { 
+  optionImagenes.classList.add("option-selected");
+  optionVideos.classList.remove("option-selected");
+});
+
+/* Al darle click en videos desaparecera todo lo de imagenes y se diseversa */
+let infoModal = document.getElementById("info-modal");
+optionVideos.addEventListener("click", function() {
+  mainImgModal.style.display = "none";
+  infoModal.style.display = "none";
+});
+optionImagenes.addEventListener("click", function() {
+  mainImgModal.style.display = "block";
+  infoModal.style.display = "block";
+});
+
+/*  */
+/*  */
+/* Cuando haga click en el "" se ejucutara el siguiente funcion */
+
+mainImgModal1.addEventListener("click", () => {
+  mainImgModal.setAttribute("src", "img/barco_uno.jpg");
+
+  boxMainImgModal1.classList.add("box-img-barcos");
+  boxMainImgModal2.classList.remove("box-img-barcos");
+  boxMainImgModal3.classList.remove("box-img-barcos");
+  boxMainImgModal4.classList.remove("box-img-barcos");
+  boxMainImgModal5.classList.remove("box-img-barcos");
+
+  mainImgModal1.classList.add("img-barcos-opa");
+  mainImgModal2.classList.remove("img-barcos-opa");
+  mainImgModal3.classList.remove("img-barcos-opa");
+  mainImgModal4.classList.remove("img-barcos-opa");
+  mainImgModal5.classList.remove("img-barcos-opa");
+});
 mainImgModal2.addEventListener("click", () => {
+  mainImgModal.setAttribute("src", "img/barco_dos.jpg");
 
-boxMainImgModal1.classList.remove("selected");
+  boxMainImgModal1.classList.remove("box-img-barcos");
+  boxMainImgModal2.classList.add("box-img-barcos");
+  boxMainImgModal3.classList.remove("box-img-barcos");
+  boxMainImgModal4.classList.remove("box-img-barcos");
+  boxMainImgModal5.classList.remove("box-img-barcos");
 
-boxMainImgModal2.classList.add("selected");
-
-boxMainImgModal3.classList.remove("selected");
-
-boxMainImgModal4.classList.remove("selected");
-
-boxMainImgModal5.classList.remove("selected");
-
-mainImgModal.setAttribute("src", "img/depredador2.jpg");
-
-  });
+  mainImgModal1.classList.remove("img-barcos-opa");
+  mainImgModal2.classList.add("img-barcos-opa");
+  mainImgModal3.classList.remove("img-barcos-opa");
+  mainImgModal4.classList.remove("img-barcos-opa");
+  mainImgModal5.classList.remove("img-barcos-opa");
+});
 mainImgModal3.addEventListener("click", () => {
-  
-boxMainImgModal1.classList.remove("selected");
+  mainImgModal.setAttribute("src", "img/barco_tres.jpg");
 
-boxMainImgModal2.classList.remove("selected");
+  boxMainImgModal1.classList.remove("box-img-barcos");
+  boxMainImgModal2.classList.remove("box-img-barcos");
+  boxMainImgModal3.classList.add("box-img-barcos");
+  boxMainImgModal4.classList.remove("box-img-barcos");
+  boxMainImgModal5.classList.remove("box-img-barcos");
 
-boxMainImgModal3.classList.add("selected");
-
-boxMainImgModal4.classList.remove("selected");
-
-boxMainImgModal5.classList.remove("selected");
-
-    mainImgModal.setAttribute("src", "img/depredador3.jpg");
-  
-  });
+  mainImgModal1.classList.remove("img-barcos-opa");
+  mainImgModal2.classList.remove("img-barcos-opa");
+  mainImgModal3.classList.add("img-barcos-opa");
+  mainImgModal4.classList.remove("img-barcos-opa");
+  mainImgModal5.classList.remove("img-barcos-opa");
+});
 mainImgModal4.addEventListener("click", () => {
-  
-  boxMainImgModal1.classList.remove("selected");
+  mainImgModal.setAttribute("src", "img/barco_cuatro.jpg");
 
-  boxMainImgModal2.classList.remove("selected");
+  boxMainImgModal1.classList.remove("box-img-barcos");
+  boxMainImgModal2.classList.remove("box-img-barcos");
+  boxMainImgModal3.classList.remove("box-img-barcos");
+  boxMainImgModal4.classList.add("box-img-barcos");
+  boxMainImgModal5.classList.remove("box-img-barcos");
   
-  boxMainImgModal3.classList.remove("selected");
-  
-  boxMainImgModal4.classList.add("selected");
-  
-  boxMainImgModal5.classList.remove("selected");
-    mainImgModal.setAttribute("src", "img/depredador4.jpg");
-
-  });
+  mainImgModal1.classList.remove("img-barcos-opa");
+  mainImgModal2.classList.remove("img-barcos-opa");
+  mainImgModal3.classList.remove("img-barcos-opa");
+  mainImgModal4.classList.add("img-barcos-opa");
+  mainImgModal5.classList.remove("img-barcos-opa");
+});
 mainImgModal5.addEventListener("click", () => {
-  
-  boxMainImgModal1.classList.remove("selected");
+  mainImgModal.setAttribute("src", "img/barco_cinco.jpg");
 
-  boxMainImgModal2.classList.remove("selected");
-  
-  boxMainImgModal3.classList.remove("selected");
-  
-  boxMainImgModal4.classList.remove("selected");
-  
-  boxMainImgModal5.classList.add("selected");
+  boxMainImgModal1.classList.remove("box-img-barcos");
+  boxMainImgModal2.classList.remove("box-img-barcos");
+  boxMainImgModal3.classList.remove("box-img-barcos");
+  boxMainImgModal4.classList.remove("box-img-barcos");
+  boxMainImgModal5.classList.add("box-img-barcos");
 
-   mainImgModal.setAttribute("src", "img/depredador5.jpg");
+  mainImgModal1.classList.remove("img-barcos-opa");
+  mainImgModal2.classList.remove("img-barcos-opa");
+  mainImgModal3.classList.remove("img-barcos-opa");
+  mainImgModal4.classList.remove("img-barcos-opa");
+  mainImgModal5.classList.add("img-barcos-opa");
+});
 
-  });
 
-const miniaturas = document.querySelectorAll('.img-mini');
+
+/* -------------------------------------------------------------- */
+/* Alertas al darle click a unos botones */
+let comprarAhora = document.getElementById("comprarAhora");
+let agregarCarrito = document.getElementById("agregarCarrito");
+
+comprarAhora.addEventListener("click", () => { 
+alert("¡Gracias por su compra!");
+});
+agregarCarrito.addEventListener("click", () => { 
+alert("¡Ha sido agregado con éxito!");
+});
+
+
+/* -------------------------------------------------------------- */
+/* El cambio de la imagen al pasar el cursor por encima y que se mantenga la imagen */
+let miniaturas = document.querySelectorAll('.img-mini');
 
 miniaturas.forEach((miniatura) => {
     miniatura.addEventListener('click', () => {
 
-        const imagenPrincipal = document.getElementById('mainImgModal');
-        const src = miniatura.getAttribute('src');
-        imagenPrincipal.setAttribute('src', src);
-
-        imagenPrincipal.classList.add('enlarge');
-
-        
-   
+    const imagenPrincipal = document.getElementById('mainImgModal');
+    const src = miniatura.getAttribute('src');
+    imagenPrincipal.setAttribute('src', src);
+    imagenPrincipal.classList.add('enlarge');
     });
 });
-
-const miniaturas1 = document.querySelectorAll('.img-mini');
-
-miniaturas1.forEach((miniatura) => {
-
-miniatura.addEventListener('mouseover', () => {
+let containerImg = document.querySelector('.principal-container-img');
+let imagenPrincipal = document.getElementById('mainImgModal111');
 
 
-miniatura.parentElement.classList.add('border-blue');
+containerImg.addEventListener('mouseover', (event) => {
+  if (event.target && event.target.classList.contains('principal-article')) {
+    const src = event.target.querySelector('.img-mini-p').getAttribute('src');
+    imagenPrincipal.setAttribute('src', src);
+
+  }
 });
 
-miniatura.addEventListener('click', () => {
-
-  basic
-  Copy
- 
-  miniatura.parentElement.classList.remove('border-blue');
-  miniatura.parentElement.classList.add('border-orange');
-  });
-  
-  });
-
-btnClose.addEventListener("click", function() {
-  mainContent.style.display = "none";
-});
-
-
-//principal
-let mainImgModal111 = document.getElementById("mainImgModal111");
-
-let mainImgModal11 = document.getElementById("mainImgModal11");
-let mainImgModal22 = document.getElementById("mainImgModal22");
-let mainImgModal33 = document.getElementById("mainImgModal33");
-let mainImgModal44 = document.getElementById("mainImgModal44");
-let mainImgModal55 = document.getElementById("mainImgModal55");
-
-let boxMainImgModal11 = document.getElementById("boxMainImgModal11");
-let boxMainImgModal22 = document.getElementById("boxMainImgModal22");
-let boxMainImgModal33 = document.getElementById("boxMainImgModal33");
-let boxMainImgModal44 = document.getElementById("boxMainImgModal44");
-let boxMainImgModal55 = document.getElementById("boxMainImgModal55");
-
-mainImgModal11.addEventListener("click", () => {
-  
-mainImgModal111.setAttribute("src", "img/depredador1.jpg");
-  
-});
-
-mainImgModal22.addEventListener("click", () => {
-
-mainImgModal111.setAttribute("src", "img/depredador2.jpg");
-   
-});
-mainImgModal33.addEventListener("click", () => {
-
-mainImgModal111.setAttribute("src", "img/depredador3.jpg");
-  
-});
-
-mainImgModal44.addEventListener("click", () => {
-    
-mainImgModal111.setAttribute("src", "img/depredador4.jpg");
-
-});
-
-mainImgModal55.addEventListener("click", () => {
-    
-mainImgModal111.setAttribute("src", "img/depredador5.jpg");
-
-});
-
-  mainImgModal111.addEventListener("click", function() {
-
-    if (mainContent.style.display === "none") {
-    mainContent.style.display = "block";
-    }
-  
-  });
-
-  const containerImg = document.querySelector('.principal-container-img');
-  const imagenPrincipal = document.getElementById('mainImgModal111');
-  const miniatura1 = document.querySelectorAll('.principal-article');
-  
-  containerImg.addEventListener('mouseover', (event) => {
-    if (event.target && event.target.classList.contains('principal-article')) {
-      const src = event.target.querySelector('.img-mini-principal').getAttribute('src');
-      imagenPrincipal.setAttribute('src', src);
-
-  
-      miniaturas.forEach((miniatura) => {
-        miniatura.style.border = '2px double rgb(214, 211, 211)'; // Restablecer el borde de todas las miniaturas
-      });
-  
-      event.target.style.border = '2px solid lightblue'; // Cambiar el borde de la miniatura al pasar el cursor
-    }
-  });
-  
-  containerImg.style.cursor = 'pointer';
-  
-  miniatura1.forEach((miniatura) => {
-    miniatura.addEventListener('mouseover', () => {
-      miniatura.style.border = '2px solid lightblue'; // Cambiar el borde al pasar el cursor por la miniatura
-    });
-  
-    miniatura.addEventListener('mouseout', () => {
-      miniatura.style.border = '1px solid rgb(77, 77, 79)'; // Restablecer el borde al salir del cursor
-    });
-  });
-  
-  img_principal.onmousemove = function (e) {
-    e.target.style.setProperty("--x", (10 * e.offsetX / e.target.offsetWidth) + "%")
-    e.target.style.setProperty("--y", (10 * e.offsetY / e.target.offsetHeight) + "%")
-}
-
+/*  */
+/*  */
 window.onload = () => {
   let modalt = document.getElementById('modalt');
   let mainImgModal111 = document.getElementById('mainImgModal111');
@@ -248,3 +199,101 @@ window.onload = () => {
       modalt.classList.remove('quitar-estilo');
   });
 }
+/*  */
+/*  */
+let start1 = document.getElementById("start1")
+let start2 = document.getElementById("start2")
+let start3 = document.getElementById("start3")
+let start4 = document.getElementById("start4")
+let start5 = document.getElementById("start5")
+let puntuacion = document.getElementById("puntuacion").innerText = 4.3
+    
+    if(puntuacion >= 0 && puntuacion <= 0.2) {
+        start1.setAttribute("class", "estrella fa-regular fa-star")
+        start2.setAttribute("class", "estrella fa-regular fa-star")
+        start3.setAttribute("class", "estrella fa-regular fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 0.3 && puntuacion <= 0.7) {
+        start1.setAttribute("class", "estrella fa-solid fa-star-half-stroke")
+        start2.setAttribute("class", "estrella fa-regular fa-star")
+        start3.setAttribute("class", "estrella fa-regular fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 0.8 && puntuacion <= 1.2) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-regular fa-star")
+        start3.setAttribute("class", "estrella fa-regular fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 1.3 && puntuacion <= 1.7){
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star-half-stroke")
+        start3.setAttribute("class", "estrella fa-regular fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 1.8 && puntuacion <= 2.2) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-regular fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 2.3 && puntuacion <= 2.7) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star-half-stroke")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 2.8 && puntuacion <= 3.2){
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star")
+        start4.setAttribute("class", "estrella fa-regular fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 3.3 && puntuacion <= 3.7) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star")
+        start4.setAttribute("class", "estrella fa-solid fa-star-half-stroke")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 3.8 && puntuacion <= 4.2) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star")
+        start4.setAttribute("class", "estrella fa-solid fa-star")
+        start5.setAttribute("class", "estrella fa-regular fa-star")
+    }
+    else if(puntuacion >= 4.3 && puntuacion <= 4.7) {
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star")
+        start4.setAttribute("class", "estrella fa-solid fa-star")
+        start5.setAttribute("class", "estrella fa-solid fa-star-half-stroke")
+    }
+    else if(puntuacion >= 4.8 && puntuacion <= 5){
+        start1.setAttribute("class", "estrella fa-solid fa-star")
+        start2.setAttribute("class", "estrella fa-solid fa-star")
+        start3.setAttribute("class", "estrella fa-solid fa-star")
+        start4.setAttribute("class", "estrella fa-solid fa-star")
+        start5.setAttribute("class", "estrella fa-solid fa-star")
+    }
+
+
+/*   <i class="fa-solid fa-star-half-alt">Media estrella</i>  */
+/* <i class="fa-regular fa-star">Vacia estrella</i> */
+/* <i class="fa-solid fa-star">Llena estrella</i> */
+
+/*  */
+/* zoom */
+
+
+
+
