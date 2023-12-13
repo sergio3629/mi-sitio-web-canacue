@@ -493,6 +493,7 @@ z-index: 20;
 .principal-icon {
     color: rgb(35, 33, 33);
     font-weight: 100;
+
 }
 .txt-disponible {
     color: rgb(52, 119, 35);
@@ -504,10 +505,12 @@ z-index: 20;
     color: rgb(86, 86, 86);
 }
 .txt-entrega {
-    color: rgb(127, 127, 127);
+    color: black;
+    font-size: 14px;
 }
 .txt-entrega-negrita {
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 14px;
 
 }
 .txt-entrega-verde {
@@ -534,7 +537,7 @@ z-index: 20;
 .comprar-ahora, .agregar-carrito{
     width: 200px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 10px;
     font-weight: 400;
     cursor: pointer;
@@ -546,16 +549,17 @@ z-index: 20;
 }
 .agregar-carrito {
 
-    border: 1px solid rgb(171, 168, 168);
+    
+    border: 1px solid rgb(255, 216, 20);
+    background-color: rgb(255, 215, 0);
 
 
 
 }
 
 .comprar-ahora {
-
-    border: 1px solid rgb(255, 216, 20);
-    background-color: rgb(255, 215, 0);
+    border: 1px solid rgb(242, 170, 46);
+    background-color: rgb(242, 170, 46);
 
 }
 
@@ -597,13 +601,14 @@ z-index: 20;
     line-height: 30px;
     padding-bottom: 10px;
   }
-  .marca{
+.marca{
     cursor: pointer;
     text-decoration: none;
     color: #007185;
     font-size: 14px;
     display: block;
-   margin-bottom: -10px;
+margin-top: -1px;
+   margin-left: 1px;
  /*    margin-top: -20px; */
   }
   .marca:hover{
@@ -778,7 +783,7 @@ margin-top: -25px;
 }
 
 #devoluciones-gratis-icono-1 {
-    margin-left: 90px;
+    margin-left: 70px;
     margin-top: -32px;
 
 }
@@ -850,3 +855,107 @@ font-size: 14px;
 margin-top: 10px;
 
 }
+
+.listado-normal{
+    font-size: 12px;
+}
+.listado-azul{
+    font-size: 12px;
+    margin-left: 90px;
+    margin-top: -50px;
+    color: #1a7277;
+}
+
+.pago {
+    margin-top: -20px;
+    font-size: 13px;
+    color: #757777;
+}
+
+.texto-seleccion {
+    font-size: 15px;
+}
+
+.main-nav-1 {
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    background-color: rgb(239, 237, 237);
+    
+  }
+
+
+  .main-menu-1 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    
+  }
+
+  .hori-1 {
+    display: inline-block;
+    padding: 10px;
+    color: black;
+
+  }
+  
+  .hori-1:hover {
+    cursor: pointer;
+    color: rgb(242, 134, 46);
+  
+  }
+
+
+
+
+
+
+
+  .barra {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(140, 150, 158);
+    border-radius: 8px;
+    overflow:hidden;
+  }
+  .grafica-barras {
+    margin-top: 50px;
+  }
+  .grafica-uno, .grafica-dos, .grafica-tres, .grafica-cuatro, .grafica-cinco {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+.txt-puntuacion {
+    color: #75e4fc;
+}
+.txt-puntuacion:hover {
+    color: #ffbb3e;
+}
+  .barra-1-puntaje, .barra-2-puntaje, .barra-3-puntaje,
+  .barra-4-puntaje, .barra-5-puntaje {
+    background-color: rgb(255,164,28);
+    width: 0px;
+    height: 30px;
+    overflow: hidden;
+    transition: width 1s;
+  }
+  .tabla-calificaciones {
+    border: 1px solid #C8C8C8 ;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-left: 720px;
+  margin-top: 225px;
+  background-color: #EEEEEE;
+}
+
+
